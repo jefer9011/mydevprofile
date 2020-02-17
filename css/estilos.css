@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(205, 212, 233);
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+}
+
+.contenedor-lista {
+    background: rgb(210, 220, 245);
+    box-shadow: 0px 0px 50px rgba(14, 15, 15, 0.16);
+    border-radius: 10px;
+}
+
+.contenedor-lista h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+}
+
+.lista {
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo2 {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.contenedor-texto {
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.contenedor-tecnologias {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.contenedor-footer {
+    grid-template-columns: auto 1fr 1fr 1fr;
+    position: relative;
+    bottom: 0;
+    height: 60px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Lato';
+}
+
+.lista .persona {
+    background: #fff;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    align-items: top;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: move;
+}
+
+
+/* ? Clases para los estilos en los diferentes estados del drag and drop */
+
+.lista .persona.seleccionado {
+    transform: scale(1.02) rotate(-1deg);
+    box-shadow: 0px 0px 20px rgba(206, 220, 241, 0.16);
+    background-color: rgb(176, 188, 241);
+    color: #fff;
+}
+
+.lista .persona.drag {
+    background-color: transparent;
+    opacity: 0;
+}
+
+
+/* ? ------- */
+
+.lista .label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #5173CF;
+    font-weight: bold;
+}
+
+.lista .dato {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lista .dato {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lista .persona img {
+    width: 70px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+img.profile-photo {
+    width: 250px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+img.tech-photo {
+    width: 170px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.foto {
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.contenedor-texto .profesion {
+    color: #5173CF;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.persona {
+    margin: 5px;
+}
+
+.frontend {
+    font-weight: bold;
+    color: #5173CF;
+}
+
+
+/* estilos boton ir arriba */
+
+.ir-arriba {
+    display: inline-block;
+    padding: 20px;
+    background-color: #5173CF;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+}
