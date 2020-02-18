@@ -15,53 +15,53 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 900px;
+    max-width: 56.25em;
 }
 
 .contenedor-lista {
     background: rgb(210, 220, 245);
-    box-shadow: 0px 0px 50px rgba(14, 15, 15, 0.16);
-    border-radius: 10px;
+    box-shadow: 0em 0em 3.125em rgba(14, 15, 15, 0.16);
+    border-radius: 0.625em;
 }
 
 .contenedor-lista h1 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.25em;
     background: #fff;
-    height: 100px;
+    height: 6.25em;
     display: flex;
     align-items: center;
-    padding: 40px;
-    border-radius: 10px 10px 0 0;
+    padding: 2.5em;
+    border-radius: 0.625em 0.625em 0 0;
     margin-bottom: 0;
 }
 
 .lista {
-    padding: 20px;
+    padding: 1.25em;
     width: 100%;
 }
 
 .titulo2 {
-    padding-top: 20px;
+    padding-top: 1.25em;
     width: 100%;
 }
 
 .contenedor-texto {
-    padding: 20px;
+    padding: 1.25em;
     width: 100%;
-    font-size: 20px;
+    font-size: 1.25em;
     background: #fff;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625em 0.625em 0 0;
     margin-bottom: 0;
     text-align: center;
 }
 
 .contenedor-tecnologias {
-    padding: 10px;
+    padding: 0.625em;
     width: 100%;
-    font-size: 15px;
+    font-size: 0.9375em;
     background: #fff;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0.625em 0.625em 0.625em 0.625em;
     text-align: center;
 }
 
@@ -69,10 +69,10 @@ body {
     grid-template-columns: auto 1fr 1fr 1fr;
     position: relative;
     bottom: 0;
-    height: 60px;
-    margin-top: 40px;
+    height: 3.75em;
+    margin-top: 2.5em;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75em;
     font-family: 'Lato';
 }
 
@@ -81,9 +81,9 @@ body {
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr;
     align-items: top;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 1.25em;
+    border-radius: 0.625em;
+    margin-bottom: 1.25em;
     cursor: move;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .lista .persona.seleccionado {
     transform: scale(1.02) rotate(-1deg);
-    box-shadow: 0px 0px 20px rgba(206, 220, 241, 0.16);
+    box-shadow: 0em 0em 1.25em rgba(206, 220, 241, 0.16);
     background-color: rgb(176, 188, 241);
     color: #fff;
 }
@@ -107,44 +107,44 @@ body {
 
 .lista .label {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
     color: #5173CF;
     font-weight: bold;
 }
 
 .lista .dato {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .lista .dato {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 
 .lista .persona img {
-    width: 70px;
+    width: 4.375em;
     border-radius: 100%;
     text-align: center;
 }
 
 img.profile-photo {
-    width: 250px;
+    width: 15.625em;
     border-radius: 100%;
     align-items: center;
 }
 
 img.tech-photo {
-    width: 170px;
+    width: 10.625em;
     border-radius: 100%;
     align-items: center;
 }
 
 .foto {
     text-align: center;
-    margin: 20px;
+    margin: 1.25em;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 1.25em;
 }
 
 .contenedor-texto .profesion {
@@ -154,7 +154,7 @@ img.tech-photo {
 }
 
 .persona {
-    margin: 5px;
+    margin: 0.3125em;
 }
 
 .frontend {
@@ -166,11 +166,67 @@ img.tech-photo {
 /* estilos boton ir arriba */
 
 .ir-arriba {
-    display: inline-block;
+    display: none;
     padding: 20px;
     background-color: #5173CF;
-    font-size: 20px;
     color: #fff;
+    font-size: 20px;
     cursor: pointer;
     position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.social {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    -o-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .icon-twitter {
+    background-color: #00acee;
+}
+
+.social ul li .icon-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 10% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social ul li .icon-github {
+    background-color: #913399;
+}
+
+.social ul li .icon-whatsapp {
+    background-color: #00bb2d;
+}
+
+.social ul li .icon-linkedin {
+    background-color: #0e76a8;
+}
+
+.social ul li .icon-envelope {
+    background-color: #d44638;
+}
+
+.social ul li a:hover {
+    padding: 10px 30px;
+    transition: 0.2s;
+    background-color: black;
+    color: whitesmoke;
 }
