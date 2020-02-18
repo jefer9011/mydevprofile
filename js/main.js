@@ -1,21 +1,17 @@
-/*$(document).ready(function() {
-
+$(document).ready(function() {
     $('.ir-arriba').click(function() {
         $('body, html').animate({
             scrollTop: '0px'
         }, 300);
     });
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
             $('.ir-arriba').slideDown(300);
         } else {
             $('.ir-arriba').slideUp(300);
-
         }
     });
 });
-*/
 
 const lista = document.getElementById('lista');
 const typed = new Typed('.typed', {
@@ -40,9 +36,7 @@ const typed = new Typed('.typed', {
     showCursor: true,
     cursorChar: '|',
     contentType: 'html'
-
 });
-
 
 
 Sortable.create(lista, {
@@ -68,6 +62,5 @@ Sortable.create(lista, {
             const orden = localStorage.getItem(sortable.options.group.name);
             return orden ? orden.split('|') : [];
         }
-
     }
 });
