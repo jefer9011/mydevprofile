@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $('.ir-arriba').click(function() {
         $('body, html').animate({
@@ -15,7 +15,7 @@ $(document).ready(function() {
         }
     });
 });
-
+*/
 
 const lista = document.getElementById('lista');
 const typed = new Typed('.typed', {
